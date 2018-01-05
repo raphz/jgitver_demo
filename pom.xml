@@ -5,7 +5,8 @@
 
 	<groupId>com.sweeney</groupId>
 	<artifactId>maven_git_release_demo</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<!-- version is set by jgitver extension when building -->
+	<version>0</version>
 	<packaging>jar</packaging>
 
 	<name>maven_git_release_demo</name>
