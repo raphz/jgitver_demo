@@ -15,6 +15,7 @@ public class GenerateHashController {
     @RequestMapping("/hash/{input}")
     public GeneratedHash generatedHash(@PathVariable("input") String input) {
         try {
+            // Create a hash of the input string using SHA-256
             return new GeneratedHash(DatatypeConverter.printHexBinary(
                     MessageDigest.getInstance("SHA-256").digest(input.getBytes("UTF-8"))));
         } catch (NoSuchAlgorithmException | UnsupportedEncodingException e) {
