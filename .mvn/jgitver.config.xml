@@ -33,9 +33,6 @@
   <versionPattern>${v}${&lt;meta.QUALIFIED_BRANCH_NAME}${&lt;meta.COMMIT_DISTANCE}</versionPattern>
   <!-- Usages of "<" are escaped with "&lt;" -->
 
-  <!-- String, only for PATTERN strategy -->
-  <tagVersionPattern>${v}</tagVersionPattern>
-
   <!-- String, regex with at least one capture group -->
   <regexVersionTag>v?([0-9]+(?:\\.[0-9]+){0,2}(?:-[a-zA-Z0-9\\-_]+)?)</regexVersionTag>
 </configuration>
